@@ -10,6 +10,7 @@ export interface BenefitItem {
   description: string;
   icon: string;
   side: 'left' | 'right';
+  bullets?: string[];
 }
 
 export interface GalleryItem {
@@ -105,7 +106,7 @@ export const siteContent: SiteContent = {
     tagline: "Peternakan Telur Bebek Omega Segar & Berkualitas",
     owner: "Pak Ryan",
     location: "Indralaya, Ogan Ilir, Sumatera Selatan",
-    waNumber: "6281234567890",
+    waNumber: "6282175432777",
     waDefaultMessage: "Halo Pak Ryan, saya ingin bertanya/memesan telur bebek omega B.M Farm.",
     mapsUrl: "https://maps.app.goo.gl/qrb15aPX9TRLnnjN7"
   },
@@ -153,35 +154,55 @@ export const siteContent: SiteContent = {
     totalFrames: 5,
     items: [
       {
-        id: "omega3",
-        title: "Tinggi Omega-3 & DHA",
-        category: "Super Nutrisi",
-        description: "Membantu menyehatkan fungsi jantung, perkembangan otak anak, dan menjaga imunitas.",
-        icon: "health_and_safety",
+        id: "cardiovascular",
+        title: "Kesehatan Kardiovaskular",
+        category: "Jantung & Arteri",
+        description: "Menurunkan trigliserida, menekan kolesterol LDL, serta mengurangi risiko jantung koroner, stroke, dan hipertensi.",
+        bullets: [
+          "Menurunkan kadar trigliserida pemicu penyumbatan pembuluh darah",
+          "Menekan kolesterol jahat (LDL) & menjaga kelenturan arteri",
+          "Mengurangi risiko jantung koroner, stroke, dan hipertensi"
+        ],
+        icon: "favorite",
         side: "left"
       },
       {
-        id: "protein",
-        title: "Protein Lebih Tinggi",
-        category: "Sumber Energi",
-        description: "Kandungan protein padat dan asam amino esensial untuk pembentukan otot optimal.",
+        id: "brain_nerve",
+        title: "Fungsi Otak & Saraf",
+        category: "DHA & Vitamin B12",
+        description: "DHA mendukung kognitif anak sejak dini, Vitamin B12 optimalkan fungsi saraf, serta bantu pencegahan demensia lansia.",
+        bullets: [
+          "DHA mendukung perkembangan kognitif anak sejak dini",
+          "Vitamin B12 mengoptimalkan fungsi sistem saraf tubuh",
+          "Membantu pencegahan demensia & penurunan kognitif lansia"
+        ],
+        icon: "psychology",
+        side: "left"
+      },
+      {
+        id: "muscle_cell",
+        title: "Pembentukan Otot & Sel",
+        category: "Protein & Asam Amino",
+        description: "Profil asam amino lengkap dan kuantitas protein padat untuk pembentukan jaringan otot serta regenerasi sel.",
+        bullets: [
+          "Profil asam amino lengkap dengan protein lebih tinggi & padat",
+          "Sangat baik untuk pembentukan jaringan otot",
+          "Mendukung regenerasi sel secara optimal"
+        ],
         icon: "fitness_center",
-        side: "left"
-      },
-      {
-        id: "yolk",
-        title: "Kuning Telur Pekat",
-        category: "Kualitas Visual",
-        description: "Warna jingga tua yang kaya akan Beta-Karoten alami dan rasa lebih gurih tidak amis.",
-        icon: "palette",
         side: "right"
       },
       {
-        id: "trusted",
-        title: "Peternakan Terpercaya",
-        category: "Asli Lokal",
-        description: "Dikelola dengan standar higienis di wilayah Indralaya langsung oleh Pak Ryan.",
-        icon: "verified",
+        id: "energy_metabolism",
+        title: "Energi & Metabolisme",
+        category: "Zat Besi & Stamina",
+        description: "Zat besi melimpah cegah anemia, Vitamin B12 optimalkan metabolisme energi, serta pilihan protein hewani yang aman.",
+        bullets: [
+          "Zat besi (iron) melimpah untuk cegah anemia & tingkatkan stamina",
+          "Vitamin B12 tinggi mengoptimalkan metabolisme energi tubuh",
+          "Pilihan protein hewani yang lebih aman dan fungsional"
+        ],
+        icon: "bolt",
         side: "right"
       }
     ]
@@ -204,8 +225,8 @@ export const siteContent: SiteContent = {
       },
       {
         id: "3",
-        title: "Peternakan Sehat",
-        description: "Bebek dijaga agar tetap sehat dan produktif di lingkungan yang bersih",
+        title: "Pak Ryan & Tim B.M Farm",
+        description: "Dedikasi peternak lokal menghadirkan hasil panen segar",
         src: "/images/gallery/farmer-portrait.jpg"
       },
       {
@@ -246,12 +267,12 @@ export const siteContent: SiteContent = {
     faqs: [
       {
         keywords: ["harga", "berapa", "biaya", "pricelist", "eceran"],
-        answer: "Telur bebek omega B.M Farm dijual Rp 2.500 per butir. Untuk info harga terbaru hari ini, silakan hubungi  via WhatsApp.",
+        answer: "Telur bebek omega B.M Farm dijual dalam bentuk eceran maupun karton/piring. Untuk info harga terbaru hari ini, silakan hubungi Pak Ryan via WhatsApp.",
         escalate: true
       },
       {
-        keywords: ["beda", "omega", "biasa", "manfaat", "gizi", "keunggulan"],
-        answer: "Telur bebek omega memiliki kadar Omega-3, DHA, dan EPA lebih tinggi dengan kuning telur pekat jingga kemerahan. Rasanya lebih gurih dan tidak amis!",
+        keywords: ["beda", "omega", "biasa", "manfaat", "gizi", "keunggulan", "kardiovaskular", "otak"],
+        answer: "Manfaat Telur Bebek Omega B.M Farm:\n1) Kesehatan Kardiovaskular (turunkan trigliserida & LDL, cegah jantung koroner/hypertensi)\n2) Fungsi Otak & Saraf (DHA kognitif anak & B12 cegah demensia)\n3) Pembentukan Otot & Sel (protein padat & asam amino lengkap)\n4) Energi & Metabolisme (zat besi cegah anemia & tingkatkan stamina)",
         escalate: false
       },
       {
@@ -267,10 +288,10 @@ export const siteContent: SiteContent = {
       },
       {
         keywords: ["grosir", "b2b", "restoran", "katering", "hotel", "partai", "reseller", "kerjasama", "diskon"],
-        answer: "Untuk pemesanan grosir dan kemitraan, bisa mengajukan penawaran khusus langsung!",
+        answer: "Untuk pemesanan grosir/B2B dan kemitraan restoran/katering, Pak Ryan akan memberikan penawaran khusus langsung.",
         escalate: true
       }
     ],
-    escalationText: "Untuk info terbaru & pemesanan langsung, silakan hubungi via WhatsApp."
+    escalationText: "Untuk info terbaru & pemesanan langsung, silakan hubungi Pak Ryan via WhatsApp."
   }
 };

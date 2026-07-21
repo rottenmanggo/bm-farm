@@ -103,13 +103,13 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* WhatsApp CTA & Mobile Toggle */}
-        <div className="flex items-center gap-4">
+        {/* WhatsApp Button & Mobile Toggle */}
+        <div className="flex items-center gap-3">
           <a
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-primary-dark transition-all duration-200 flex items-center gap-2 shadow-xs active:scale-95 whitespace-nowrap"
+            className="bg-primary text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-primary-dark transition-all duration-200 flex items-center gap-2 shadow-xs active:scale-95 whitespace-nowrap"
           >
             <span className="material-symbols-outlined text-[18px]">chat</span>
             <span className="hidden sm:inline">WhatsApp</span>
