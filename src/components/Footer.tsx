@@ -9,8 +9,19 @@ export default function Footer() {
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-between">
         {/* Left Column: Brand Info & Telok-O Button */}
         <div>
-          <a href="#" className="text-xl font-extrabold text-primary mb-2 block tracking-tight">
-            {brand.name}
+          <a href="#" className="flex items-center gap-2.5 mb-2 group w-fit">
+            <div className="relative w-10 h-10 shrink-0 overflow-hidden rounded-full">
+              <Image
+                src="/images/logo/bm-farm-logo.png"
+                alt="BM Farm Logo"
+                fill
+                className="object-cover object-top"
+                sizes="40px"
+              />
+            </div>
+            <span className="text-xl font-extrabold text-primary tracking-tight group-hover:underline">
+              {brand.name}
+            </span>
           </a>
           <p className="text-sm text-text-secondary max-w-sm mb-5 leading-relaxed">
             {brand.tagline}. Berkomitmen menghadirkan nutrisi segar berkualitas tinggi langsung dari peternakan Indralaya.

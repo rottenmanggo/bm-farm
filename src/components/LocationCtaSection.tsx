@@ -66,12 +66,12 @@ export default function LocationCtaSection() {
             {/* Right Column: Live Embedded Google Maps Preview (Clean View) */}
             <div className="h-72 sm:h-80 lg:h-[360px] rounded-2xl overflow-hidden shadow-2xl bg-slate-900 relative border border-white/20">
               <iframe
-                src="https://maps.google.com/maps?q=B.M%20Farm%20Indralaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=BM%20Farm%20Indralaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 className="w-full h-full border-0"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Google Maps B.M Farm Indralaya"
+                title="Google Maps BM Farm Indralaya"
               />
             </div>
           </div>

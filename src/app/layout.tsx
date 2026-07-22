@@ -1,17 +1,60 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
-import { siteContent } from '@/content/site-content';
+
+const siteName = 'B.M Farm Indralaya';
+const siteDescription =
+  'Telur Bebek Omega segar berkualitas premium dari peternakan lokal Indralaya. Kandungan Omega-3, EPA, dan DHA tinggi untuk kesehatan keluarga Anda. Langsung dari tangan peternak yang berdedikasi.';
+const siteUrl = 'https://bm-farm.vercel.app';
 
 export const metadata: Metadata = {
-  title: `${siteContent.brand.name} | ${siteContent.brand.tagline}`,
-  description: siteContent.hero.description,
-  keywords: ['B.M Farm', 'Telur Bebek Omega', 'Indralaya', 'Telur Bebek Segar', 'Ogan Ilir', 'Telur Omega 3'],
+  title: siteName,
+  description: siteDescription,
+  keywords: [
+    'BM Farm',
+    'B.M Farm',
+    'Telur Bebek Omega',
+    'Indralaya',
+    'Telur Bebek Segar',
+    'Ogan Ilir',
+    'Telur Omega 3',
+    'Peternakan Bebek',
+    'Sumatera Selatan',
+  ],
+  metadataBase: new URL(siteUrl),
+
+  // ── Open Graph (WhatsApp, Telegram, Facebook, etc.) ──
   openGraph: {
-    title: `${siteContent.brand.name} | ${siteContent.brand.tagline}`,
-    description: siteContent.hero.description,
+    title: siteName,
+    description: siteDescription,
+    url: siteUrl,
+    siteName: siteName,
     type: 'website',
     locale: 'id_ID',
-    siteName: siteContent.brand.name,
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'B.M Farm Indralaya – Telur Bebek Omega Premium',
+      },
+    ],
+  },
+
+  // ── Twitter / X Card ──
+  twitter: {
+    card: 'summary_large_image',
+    title: siteName,
+    description: siteDescription,
+    images: ['/og-image.jpg'],
+  },
+
+  // ── Favicon / Browser Tab Icons ──
+  icons: {
+    icon: [
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+    apple: '/favicon.png',
+    shortcut: '/favicon.png',
   },
 };
 

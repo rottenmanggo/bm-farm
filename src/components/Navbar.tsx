@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { siteContent } from '@/content/site-content';
 import { Menu, X } from 'lucide-react';
 
@@ -85,9 +86,20 @@ export default function Navbar() {
         {/* Brand Logo */}
         <a
           href="#"
-          className="text-xl font-extrabold text-primary tracking-tight transition-transform hover:scale-105"
+          className="flex items-center gap-2.5 transition-transform hover:scale-105"
         >
-          {siteContent.brand.name}
+          <div className="relative w-9 h-9 shrink-0 overflow-hidden rounded-full">
+            <Image
+              src="/images/logo/bm-farm-logo.png"
+              alt="BM Farm Logo"
+              fill
+              className="object-cover object-top"
+              sizes="36px"
+            />
+          </div>
+          <span className="text-xl font-extrabold text-primary tracking-tight">
+            {siteContent.brand.name}
+          </span>
         </a>
 
         {/* Desktop Links with Active Section Indicator */}

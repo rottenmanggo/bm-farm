@@ -102,12 +102,12 @@ export interface SiteContent {
 
 export const siteContent: SiteContent = {
   brand: {
-    name: "B.M Farm",
+    name: "BM Farm",
     tagline: "Menjual Telur Bebek Omega",
     owner: "Pak Ryan",
     location: "Desa Muara Penimbung Ilir, Kec. Indralaya, Kabupaten Ogan Ilir, Sumatera Selatan",
     waNumber: "6282175432777",
-    waDefaultMessage: "Halo, saya ingin bertanya/memesan telur bebek omega B.M Farm.",
+    waDefaultMessage: "Halo, saya ingin bertanya/memesan telur bebek omega BM Farm.",
     mapsUrl: "https://maps.app.goo.gl/qrb15aPX9TRLnnjN7"
   },
   navigation: {
@@ -209,7 +209,7 @@ export const siteContent: SiteContent = {
   },
   gallery: {
     title: "Galeri Peternakan",
-    subtitle: "Melihat lebih dekat lingkungan & fasilitas B.M Farm.",
+    subtitle: "Melihat lebih dekat lingkungan & fasilitas BM Farm.",
     images: [
       {
         id: "1",
@@ -261,13 +261,13 @@ export const siteContent: SiteContent = {
     mapImage: "/images/hero/indralaya-map.jpg"
   },
   chatbot: {
-    adminName: "Admin B.M Farm",
+    adminName: "Admin BM Farm",
     status: "Online Sekarang",
-    welcomeMessage: "Halo! Ada yang bisa kami bantu seputar telur bebek omega B.M Farm hari ini? 😊",
+    welcomeMessage: "Halo! Ada yang bisa kami bantu seputar telur bebek omega BM Farm hari ini? 😊",
     faqs: [
       {
         keywords: ["harga", "berapa", "biaya", "pricelist", "eceran"],
-        answer: "Telur bebek omega B.M Farm dijual dengan harga Rp 2.500 per butir. Untuk info harga terbaru atau penawaran khusus, silakan hubungi via WhatsApp.",
+        answer: "Telur bebek omega BM Farm dijual dengan harga Rp 2.500 per butir. Untuk info harga terbaru atau penawaran khusus, silakan hubungi via WhatsApp.",
         escalate: true
       },
       {
@@ -277,7 +277,7 @@ export const siteContent: SiteContent = {
       },
       {
         keywords: ["lokasi", "alamat", "dimana", "indralaya", "toko", "kandang", "muara penimbung"],
-        answer: "B.M Farm berlokasi di Desa Muara Penimbung Ilir (Dekat dengan SD Negeri 1 Indralaya), Kec. Indralaya, Kabupaten Ogan Ilir. Anda bisa langsung datang ke tempat atau memesan via WhatsApp.",
+        answer: "BM Farm berlokasi di Desa Muara Penimbung Ilir (Dekat dengan SD Negeri 1 Indralaya), Kec. Indralaya, Kabupaten Ogan Ilir. Anda bisa langsung datang ke tempat atau memesan via WhatsApp.",
         escalate: false,
         mapsCta: true
       },
