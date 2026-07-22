@@ -102,10 +102,10 @@ export default function BenefitsSection() {
     <section
       id="benefits"
       ref={containerRef}
-      className="relative bg-white min-h-[350vh]"
+      className="relative bg-white lg:min-h-[350vh]"
     >
-      {/* Sticky Main Viewport Container - 100% Vertically Centered */}
-      <div className="sticky top-0 h-screen w-full flex flex-col justify-center items-center px-4 md:px-8 overflow-hidden">
+      {/* Sticky on desktop only — normal flow on mobile so nothing gets clipped */}
+      <div className="lg:sticky lg:top-0 lg:h-screen w-full flex flex-col justify-center items-center px-4 md:px-8 py-12 lg:py-0 lg:overflow-hidden">
         {/* Section Header */}
         <div className="max-w-[1280px] w-full mx-auto text-center mb-6 md:mb-10 shrink-0">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-text-primary tracking-tight">
@@ -117,9 +117,9 @@ export default function BenefitsSection() {
         </div>
 
         {/* Interactive Layout Grid */}
-        <div className="max-w-[1280px] w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 items-center">
-          {/* Left Column Benefits (Items 0 & 1) */}
-          <div className="flex flex-col gap-6 md:gap-8 order-2 lg:order-1 text-left lg:text-right min-h-[220px]">
+        <div className="max-w-[1280px] w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 items-center">
+          {/* Top on Mobile / Left on Desktop: Benefits (Items 0 & 1) */}
+          <div className="flex flex-col gap-4 lg:gap-8 order-1 lg:order-1 text-left lg:text-right">
             {allItems.slice(0, 2).map((item, idx) => {
               const isVisible = scrollStep >= idx + 1;
               return (
@@ -131,7 +131,7 @@ export default function BenefitsSection() {
                     x: isVisible ? 0 : -15,
                   }}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className={`group flex flex-col lg:items-end gap-2 p-4 lg:p-0 rounded-2xl transition-colors ${
+                  className={`group flex flex-col lg:items-end gap-1.5 p-3 lg:p-0 rounded-2xl transition-colors ${
                     isVisible ? 'bg-surface lg:bg-transparent shadow-xs lg:shadow-none border lg:border-none border-border' : 'opacity-20'
                   }`}
                 >
@@ -157,9 +157,9 @@ export default function BenefitsSection() {
             })}
           </div>
 
-          {/* Center Column: Egg Image Sequence Frame (No border/circle frame for transparent PNGs) */}
-          <div className="order-1 lg:order-2 flex flex-col items-center justify-center relative py-2">
-            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 flex items-center justify-center">
+          {/* Middle on Mobile / Center on Desktop: Egg Image Sequence */}
+          <div className="order-2 lg:order-2 flex flex-col items-center justify-center relative py-1 mx-auto lg:mx-0 w-full">
+            <div className="relative w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 mx-auto flex items-center justify-center">
               <Image
                 src={frames[currentFrameIndex]}
                 alt={`Telur Omega Frame ${currentFrameIndex + 1}`}
@@ -171,8 +171,8 @@ export default function BenefitsSection() {
             </div>
           </div>
 
-          {/* Right Column Benefits (Items 2 & 3) */}
-          <div className="flex flex-col gap-6 md:gap-8 order-3 text-left min-h-[220px]">
+          {/* Bottom on Mobile / Right on Desktop: Benefits (Items 2 & 3) */}
+          <div className="flex flex-col gap-4 lg:gap-8 order-3 text-left">
             {allItems.slice(2, 4).map((item, idx) => {
               const itemStepIndex = idx + 3;
               const isVisible = scrollStep >= itemStepIndex;
@@ -185,7 +185,7 @@ export default function BenefitsSection() {
                     x: isVisible ? 0 : 15,
                   }}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className={`group flex flex-col items-start gap-2 p-4 lg:p-0 rounded-2xl transition-colors ${
+                  className={`group flex flex-col items-start gap-1.5 p-3 lg:p-0 rounded-2xl transition-colors ${
                     isVisible ? 'bg-surface lg:bg-transparent shadow-xs lg:shadow-none border lg:border-none border-border' : 'opacity-20'
                   }`}
                 >

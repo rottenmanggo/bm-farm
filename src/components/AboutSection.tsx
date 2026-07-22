@@ -16,7 +16,7 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="order-2 md:order-1"
+          className="order-1"
         >
           <div className="relative rounded-2xl overflow-hidden shadow-xl border border-border aspect-[4/3] group">
             <Image
@@ -37,7 +37,7 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
-          className="order-1 md:order-2 flex flex-col justify-center"
+          className="order-2 flex flex-col justify-center"
         >
           {/* Section Heading */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-text-primary mb-6 tracking-tight leading-snug">

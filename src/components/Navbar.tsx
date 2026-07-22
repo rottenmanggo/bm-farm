@@ -8,6 +8,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string>('');
   const [isVisible, setIsVisible] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
   const lastScrollY = useRef(0);
 
   const waUrl = `https://wa.me/${siteContent.brand.waNumber}?text=${encodeURIComponent(
@@ -18,6 +19,8 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+
+      setIsScrolled(currentScrollY > 20);
 
       if (currentScrollY <= 20) {
         setIsVisible(true);
@@ -70,8 +73,12 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-xs transition-transform duration-300 ${
-        isVisible ? 'translate-y-0' : '-translate-y-full'
+      className={`fixed z-50 transition-all duration-300 ${
+        isScrolled
+          ? 'top-3 left-4 right-4 md:left-8 md:right-8 rounded-2xl bg-white/95 backdrop-blur-md border border-border shadow-lg'
+          : 'top-0 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-border shadow-xs'
+      } ${
+        isVisible ? 'translate-y-0' : '-translate-y-[calc(100%+12px)]'
       }`}
     >
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex justify-between items-center h-16">

@@ -225,14 +225,14 @@ export const siteContent: SiteContent = {
       },
       {
         id: "3",
-        title: "Pak Ryan & Tim B.M Farm",
-        description: "Dedikasi peternak lokal menghadirkan hasil panen segar",
+        title: "Bebek Sehat, Telur Berkualitas",
+        description: "Komitmen terhadap kesehatan bebek untuk hasil telur omega terbaik",
         src: "/images/gallery/farmer-portrait.jpg"
       },
       {
         id: "4",
         title: "Kuning Telur Omega Pekat",
-        description: "Bukti visual warna jingga tua kaya kandungan gizi",
+        description: "Bukti visual warna kuning telur kaya kandungan gizi",
         src: "/images/hero/omega-egg-yolk.jpg"
       }
     ],
@@ -267,12 +267,12 @@ export const siteContent: SiteContent = {
     faqs: [
       {
         keywords: ["harga", "berapa", "biaya", "pricelist", "eceran"],
-        answer: "Telur bebek omega B.M Farm dijual dalam bentuk eceran maupun karton/piring. Untuk info harga terbaru hari ini, silakan hubungi Pak Ryan via WhatsApp.",
+        answer: "Telur bebek omega B.M Farm dijual dengan harga Rp 2.500 per butir. Untuk info harga terbaru atau penawaran khusus, silakan hubungi via WhatsApp.",
         escalate: true
       },
       {
         keywords: ["beda", "omega", "biasa", "manfaat", "gizi", "keunggulan", "kardiovaskular", "otak"],
-        answer: "Manfaat Telur Bebek Omega B.M Farm:\n1) Kesehatan Kardiovaskular (turunkan trigliserida & LDL, cegah jantung koroner/hypertensi)\n2) Fungsi Otak & Saraf (DHA kognitif anak & B12 cegah demensia)\n3) Pembentukan Otot & Sel (protein padat & asam amino lengkap)\n4) Energi & Metabolisme (zat besi cegah anemia & tingkatkan stamina)",
+        answer: "Manfaat Telur Bebek Omega yaitu bisa menjaga kesehatan kardiovaskular (cegah jantung koroner/hypertensi), merawat fungsi otak & saraf, membantu pembentukan otot & sel, menjadikan energi dan metabolisme untuk cegah anemia serta tingkatkan stamina",
         escalate: false
       },
       {
@@ -288,10 +288,10 @@ export const siteContent: SiteContent = {
       },
       {
         keywords: ["grosir", "b2b", "restoran", "katering", "hotel", "partai", "reseller", "kerjasama", "diskon"],
-        answer: "Untuk pemesanan grosir/B2B dan kemitraan restoran/katering, Pak Ryan akan memberikan penawaran khusus langsung.",
+        answer: "Untuk pemesanan grosir dan kemitraan, hubungi via WhatsApp untuk mendapatkan penawaran khusus langsung.",
         escalate: true
       }
     ],
-    escalationText: "Untuk info terbaru & pemesanan langsung, silakan hubungi Pak Ryan via WhatsApp."
+    escalationText: "Untuk info terbaru & pemesanan langsung, silakan hubungi via WhatsApp."
   }
 };
