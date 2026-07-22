@@ -60,7 +60,7 @@ export default function Footer() {
           </nav>
 
           <p className="text-xs text-text-secondary">
-            Lokasi: <span className="font-semibold text-text-primary">{brand.location}</span>
+            <span className="font-semibold text-text-primary">{brand.location}</span>
           </p>
         </div>
       </div>

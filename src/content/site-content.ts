@@ -103,11 +103,11 @@ export interface SiteContent {
 export const siteContent: SiteContent = {
   brand: {
     name: "B.M Farm",
-    tagline: "Peternakan Telur Bebek Omega Segar & Berkualitas",
+    tagline: "Menjual Telur Bebek Omega",
     owner: "Pak Ryan",
-    location: "Indralaya, Ogan Ilir, Sumatera Selatan",
+    location: "Desa Muara Penimbung Ilir, Kec. Indralaya, Kabupaten Ogan Ilir, Sumatera Selatan",
     waNumber: "6282175432777",
-    waDefaultMessage: "Halo Pak Ryan, saya ingin bertanya/memesan telur bebek omega B.M Farm.",
+    waDefaultMessage: "Halo, saya ingin bertanya/memesan telur bebek omega B.M Farm.",
     mapsUrl: "https://maps.app.goo.gl/qrb15aPX9TRLnnjN7"
   },
   navigation: {
@@ -120,11 +120,11 @@ export const siteContent: SiteContent = {
   },
   hero: {
     badge: "Peternakan Lokal Indralaya",
-    headline: "Telur Bebek Omega Segar dari Peternakan Indralaya",
+    headline: "Telur Bebek Omega",
     description: "Kualitas nutrisi premium dengan kandungan Omega-3 yang tinggi untuk kesehatan keluarga Anda. Langsung dari tangan peternak lokal yang berdedikasi.",
     ctaPrimary: "Hubungi via WhatsApp",
     ctaSecondary: "Lihat Produk",
-    image: "/images/hero/hero-duck-eggs.jpg",
+    image: "/images/hero/hero-image.png",
     qualityBadgeTitle: "Kualitas Terjamin",
     qualityBadgeSubtitle: "Grade A+ Premium",
     stats: {
@@ -148,8 +148,8 @@ export const siteContent: SiteContent = {
     image: "/images/hero/omega-egg-yolk.jpg"
   },
   benefits: {
-    title: "Keunggulan B.M Farm",
-    subtitle: "Komitmen kami dalam menghadirkan kualitas terbaik di setiap butir.",
+    title: "Keunggulan Telur Bebek Omega",
+    subtitle: "Menghadirkan kualitas terbaik di setiap butir.",
     eggCrackSequencePath: "/images/egg-crack/",
     totalFrames: 5,
     items: [
@@ -254,7 +254,7 @@ export const siteContent: SiteContent = {
   location: {
     title: "Dapatkan Telur Omega Segar Hari Ini",
     subtitle: "Kunjungi Kami",
-    description: "Kami melayani pembelian retail dan grosir untuk restoran, hotel, maupun kebutuhan rumah tangga di seluruh area Indralaya dan sekitarnya.",
+    description: "Kami melayani pembelian retail dan grosir di seluruh area Indralaya dan sekitarnya.",
     address: "Desa Muara Penimbung Ilir (Dekat SD Negeri 1 Indralaya), Kec. Indralaya, Kab. Ogan Ilir",
     ctaMaps: "Lihat Lokasi di Google Maps",
     ctaWa: "Chat via WhatsApp",
