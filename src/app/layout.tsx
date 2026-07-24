@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
-const siteName = 'B.M Farm Indralaya';
+const siteName = 'BM Farm Indralaya';
 const siteDescription =
   'Telur Bebek Omega segar berkualitas premium dari peternakan lokal Indralaya. Kandungan Omega-3, EPA, dan DHA tinggi untuk kesehatan keluarga Anda. Langsung dari tangan peternak yang berdedikasi.';
 const siteUrl = 'https://bm-farm.vercel.app';
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   keywords: [
     'BM Farm',
     'B.M Farm',
+    'BM Farm Indralaya',
     'Telur Bebek Omega',
     'Indralaya',
     'Telur Bebek Segar',
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'B.M Farm Indralaya – Telur Bebek Omega Premium',
+        alt: 'BM Farm Indralaya – Telur Bebek Omega Premium',
       },
     ],
   },
